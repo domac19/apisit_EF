@@ -60,10 +60,6 @@
     <Compile Include="Migrations\202111101318249_PopulateTableGenres.Designer.cs">
       <DependentUpon>202111101318249_PopulateTableGenres.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111101326161_AddingGenreToVideo.cs" />
-    <Compile Include="Migrations\202111101326161_AddingGenreToVideo.Designer.cs">
-      <DependentUpon>202111101326161_AddingGenreToVideo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,9 +76,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111101318249_PopulateTableGenres.resx">
       <DependentUpon>202111101318249_PopulateTableGenres.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111101326161_AddingGenreToVideo.resx">
-      <DependentUpon>202111101326161_AddingGenreToVideo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
