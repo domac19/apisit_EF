@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classification.cs" />
+    <Compile Include="EntityConfiguration\GenreConfiguration.cs" />
+    <Compile Include="EntityConfiguration\TagConfiguration.cs" />
+    <Compile Include="EntityConfiguration\VideoConfiguration.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="Migrations\202111101313020_InitialModel.cs" />
     <Compile Include="Migrations\202111101313020_InitialModel.Designer.cs">
@@ -60,9 +63,30 @@
     <Compile Include="Migrations\202111101318249_PopulateTableGenres.Designer.cs">
       <DependentUpon>202111101318249_PopulateTableGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111111351387_ChangeClassificationToByte.cs" />
+    <Compile Include="Migrations\202111111351387_ChangeClassificationToByte.Designer.cs">
+      <DependentUpon>202111111351387_ChangeClassificationToByte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111111420016_GenreIdToVideoTable.cs" />
+    <Compile Include="Migrations\202111111420016_GenreIdToVideoTable.Designer.cs">
+      <DependentUpon>202111111420016_GenreIdToVideoTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111120801180_RestrictionsForVideo.cs" />
+    <Compile Include="Migrations\202111120801180_RestrictionsForVideo.Designer.cs">
+      <DependentUpon>202111120801180_RestrictionsForVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111120847036_TagTable.cs" />
+    <Compile Include="Migrations\202111120847036_TagTable.Designer.cs">
+      <DependentUpon>202111120847036_TagTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111120905290_RestrictionsToTagGenreAndVideo.cs" />
+    <Compile Include="Migrations\202111120905290_RestrictionsToTagGenreAndVideo.Designer.cs">
+      <DependentUpon>202111120905290_RestrictionsToTagGenreAndVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tag.cs" />
     <Compile Include="Video.cs" />
     <Compile Include="VidzyContext.cs" />
   </ItemGroup>
@@ -77,6 +101,22 @@
     <EmbeddedResource Include="Migrations\202111101318249_PopulateTableGenres.resx">
       <DependentUpon>202111101318249_PopulateTableGenres.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111111351387_ChangeClassificationToByte.resx">
+      <DependentUpon>202111111351387_ChangeClassificationToByte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111111420016_GenreIdToVideoTable.resx">
+      <DependentUpon>202111111420016_GenreIdToVideoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111120801180_RestrictionsForVideo.resx">
+      <DependentUpon>202111120801180_RestrictionsForVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111120847036_TagTable.resx">
+      <DependentUpon>202111120847036_TagTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111120905290_RestrictionsToTagGenreAndVideo.resx">
+      <DependentUpon>202111120905290_RestrictionsToTagGenreAndVideo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
